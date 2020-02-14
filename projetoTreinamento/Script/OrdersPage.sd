@@ -1,0 +1,35 @@
+﻿procedure EscolheProduto(pProduto);
+begin
+  Aliases.Orders.OrderForm.Group.ProductNames.ClickItem(pProduto);
+end;
+
+procedure EscolheQuantidade(pQuantidade);
+begin
+  Aliases.Orders.OrderForm.Group.Quantity.SetText(pQuantidade);
+  Aliases.Orders.OrderForm.Group.Quantity.Keys('[Tab]');
+end;
+function ObterValor;
+begin
+  result := Aliases.Orders.OrderForm.Group.groupBox1.Total.wText;
+end;
+ {
+ Aliases.Orders.OrderForm.Group.Quantity.UpDownEdit.Click(27, 6);
+  Aliases.Orders.OrderForm.Group.Price.Click(39, 7);
+  Aliases.Orders.OrderForm.Group.Discount.Click(27, 7);
+  Aliases.Orders.OrderForm.Group.groupBox1.Total.Click(21, 16);
+  Aliases.Orders.OrderForm.Group.Date.Click(79, 7);
+  Aliases.Orders.OrderForm.Group.Customer.Click(78, 17);
+  Aliases.Orders.OrderForm.Group.Customer.SetText('er');
+  Aliases.Orders.OrderForm.Group.Street.Click(58, 4);
+  Aliases.Orders.OrderForm.Group.Street.Click(58, 4);
+  Aliases.Orders.OrderForm.Group.Street.SetText('r');
+  Aliases.Orders.OrderForm.Group.City.Click(30, 15);
+  Aliases.Orders.OrderForm.Group.City.SetText('r');
+  Aliases.Orders.OrderForm.Group.Zip.Click(17, 11);
+  Aliases.Orders.OrderForm.Group.Zip.SetText('r');
+  Aliases.Orders.OrderForm.Group.State.Click(90, 3);
+  Aliases.Orders.OrderForm.Group.State.SetText('r');
+  Aliases.Orders.OrderForm.Group.CardNo.Click(91, 12);
+  Aliases.Orders.OrderForm.Group.CardNo.SetText('rwerwer');
+  Aliases.Orders.OrderForm.ButtonOK.ClickButton;
+  }

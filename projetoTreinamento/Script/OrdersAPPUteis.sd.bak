@@ -1,0 +1,10 @@
+﻿procedure orderRun();
+begin
+TestedApps.Orders.Run;
+end;  
+  
+
+procedure orderClose();
+begin
+TestedApps.Orders.Terminate;
+end;

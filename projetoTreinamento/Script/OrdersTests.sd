@@ -1,0 +1,14 @@
+﻿uses
+ AppUteis,
+ MainPage,
+ OrdersPage,
+ Assert;
+procedure TesteNewOrder;
+ begin
+   AppUteis.orderRun;
+   MainPage.NewOrderMenu;  
+   OrdersPage.EscolheProduto('ScreenSaver');
+   OrdersPage.EscolheQuantidade('4');
+   Assert.equals('80',OrdersPage.ObterValor);   
+ end;
+ 
